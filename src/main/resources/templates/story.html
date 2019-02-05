@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table border="1">
+    <tr style="font-size: 13">
+        <td>Date</td>
+        <td>Name</td>
+        <td>Content</td>
+        <td>Title</td>
+    </tr>
+
+        <td th:text="${#dates.format(SZTORI.posted, 'yyyy-MM-dd')}"></td>
+        <td th:text="${SZTORI.blogger.name}"/> </td>
+        <td th:text="${SZTORI.content}"/> </td>
+        <td th:text="${SZTORI.title}"/> </td>
+
+
+</table>
+</body>
+</html>
